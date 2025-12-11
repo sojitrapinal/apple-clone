@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-page="login">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple Store – Sign in</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="nav container">
+      <a href="index.html" class="nav-logo">Brand</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html" class="active">Login</a>
+        <a href="about.html">About us</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main class="section-center">
+    <div class="auth-card">
+      <h1 class="section-title auth-title">Sign in with your Brand ID</h1>
+      <p class="auth-subtitle">
+        One account for your devices, orders, and support.
+      </p>
+      <form id="loginForm" class="form">
+        <label class="form-group">
+          <span>Email</span>
+          <input type="email" name="email" required class="input" />
+        </label>
+        <label class="form-group">
+          <span>Password</span>
+          <input type="password" name="password" required class="input" />
+        </label>
+        <button type="submit" class="btn btn-primary full-width">Sign in</button>
+      </form>
+
+      <div class="auth-footer">
+        <a href="#" class="auth-link">Forgot password?</a>
+        <a href="#" class="auth-link">Create a Brand ID</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bottom container">
+      <p>© <span id="year"></span> Brand Inc.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

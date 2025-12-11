@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-page="cart">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand Store – Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="nav container">
+      <a href="index.html" class="nav-logo">Brand</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html" class="active">Cart</a>
+        <a href="login.html">Login</a>
+        <a href="about.html">About us</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main class="section section-light">
+    <div class="container">
+      <h1 class="section-title">Your cart</h1>
+      <p class="section-subtitle">
+        Review your items before you checkout. Quantities and totals update in real time.
+      </p>
+
+      <div id="cartContainer" class="cart-container"></div>
+      <div id="cartSummary" class="cart-summary"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bottom container">
+      <p>© <span id="year"></span> Brand Inc.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
